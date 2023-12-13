@@ -5,9 +5,9 @@
 It can be used as a reference for PC installation
 |          类型          | 型号                                                         |
 | :--------------------: | :----------------------------------------------------------- |
-|          CPU           | Loongson 3A6000 (8-cores, up-to 2.5GHz)                      |
+|      处理器(CPU)       | Loongson 3A6000 (8-cores, up-to 2.5GHz)                      |
 |     桥片(Chipset)      | Loongson 7A2000                                              |
-|          GPU           | AMD Radeon R5 340 (1GB GDDR5, Low-Profile)                   |
+|       显卡(GPU)        | AMD Radeon R5 340 (1GB GDDR5, Low-Profile)                   |
 |   主板(Motherboard)    | XA61200                                                      |
 |      内存(Memory)      | UniIC SCC16GU03H2F1C-32AA DDR4 3200MT/s 16GB x2 (Total 32GB) |
 |     固态硬盘(SSD)      | SAMSUNG PM961 128GB (NVMe, System)                           |
