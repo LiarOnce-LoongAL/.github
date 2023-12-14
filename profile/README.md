@@ -19,4 +19,4 @@ It can be used as a reference for PC installation
 |     机箱(Chassis)      | QuickPC (OEM-like, Low-Profile)                              |
 |   电源(Power Supply)   | GAMEMAX TFX-200 (200w, with chassis)                         |
 
-[^1]: 需使用部分非原装零件安装 Need to be used some non original accessories for installation
+[^1]: 需使用部分非原装零件安装 Need to be used some non original accessories for installation https://github.com/LiarOnce-LoongAL/.github/blob/main/cooler/cooler.md
