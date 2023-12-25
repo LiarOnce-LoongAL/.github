@@ -13,7 +13,8 @@ It can be used as a reference for PC installation
 |     固态硬盘(SSD)      | Kioxia RC10 500G (NVMe, System)                           |
 |     散热器(Cooler)     | DeepCool AN600 with Honeywell PTM7950 [^1] |
 | 机箱风扇(External Fan) | ID-COOLING 80*25(mm)                                         |
-|   有线网卡(Ethernet)   | Realtek RTL8111H                                             |
+|   有线网卡(Ethernet)   | Realtek RTL8111H (Integrated)                                |
+|   有线网卡(Ethernet)   | Realtek RTL8125B (Mini-PCIe)                                 |
 |   无线网卡(Wireless)   | Intel Wireless AC 9260                                       |
 |     机箱(Chassis)      | QuickPC (OEM-like, Low-Profile)                              |
 |   电源(Power Supply)   | GAMEMAX TFX-200 (200w, with chassis)                         |
