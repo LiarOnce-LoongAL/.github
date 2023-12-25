@@ -10,8 +10,7 @@ It can be used as a reference for PC installation
 |       显卡(GPU)        | AMD Radeon R5 340 (1GB GDDR5, Low-Profile)                   |
 |   主板(Motherboard)    | XA61200                                                      |
 |      内存(Memory)      | UniIC SCC16GU03H2F1C-32AA DDR4 3200MT/s 16GB x2 (Total 32GB) |
-|     固态硬盘(SSD)      | SAMSUNG PM961 128GB (NVMe, System)                           |
-|     固态硬盘(SSD)      | Western Digital SA530 256GB (SATA, Data)                     |
+|     固态硬盘(SSD)      | Kioxia RC10 500G (NVMe, System)                           |
 |     散热器(Cooler)     | DeepCool AN600 with Honeywell PTM7950 [^1] |
 | 机箱风扇(External Fan) | ID-COOLING 80*25(mm)                                         |
 |   有线网卡(Ethernet)   | Realtek RTL8111H                                             |
