@@ -9,7 +9,7 @@
 | :---------------------: | :----------------------------------------------------------- |
 |       处理器(CPU)       | Loongson 3A6000 (8-cores, up-to 2.5GHz)                      |
 |      桥片(Chipset)      | Loongson 7A2000                                              |
-|       *显卡(GPU)        | AMD Radeon Pro WX 2100 (2GB GDDR5, Low-Profile) [^3] <br />AMD Radeon R5 340 (1GB GDDR5, Low-Profile, Alternative) |
+|       *显卡(GPU)        | AMD Radeon Pro WX 2100 (2GB GDDR5, Low-Profile) [^3] <br />AMD Radeon R5 340 (1GB GDDR5, Low-Profile, Alternative)[^4] |
 |    主板(Motherboard)    | XA61200                                                      |
 |      *内存(Memory)      | UniIC SCC16GU03H2F1C-32AA DDR4 3200MT/s 16GB x2 (Total 32GB) |
 |     *固态硬盘(SSD)      | Kioxia RC10 500G (NVMe, System)                              |
