@@ -29,4 +29,4 @@
 [^6]: TFX 机箱使用 FLEX 电源需定制转接板，当前价格为 CNY￥ 100 
 [^7]: 该卡的半高版本相当少见，铭牌为 PSTHD，来源应该是 OEM 工控机，内核参数为`amdgpu.cik_support=1 radeon.cik_support=0 amdgpu.sg_display=0 pcie_aspm=off`  
 [^8]: 由于龙芯平台的 ACPI 休眠机制不完善，若使用 AMD 显卡均需关闭动态断电功能 (添加内核参数 `amdgpu.runpm=0`)   
-[^9]: 由于体质问题，为保证稳定性建议更换其原装散热片 (适用于 XA61200/XA612A0 主板)
+[^9]: 由于体质问题，为保证稳定性建议更换其原装散热片 (适用于 XA61200/XA612A0 主板) https://github.com/LiarOnce-LoongAL/.github/blob/main/cooler/chipset.md
