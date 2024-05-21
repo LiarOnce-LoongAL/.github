@@ -8,8 +8,8 @@
 |          类型           | 型号                                                         |
 | :---------------------: | :----------------------------------------------------------- |
 |       处理器(CPU)       | Loongson 3A6000 (8-cores, up-to 2.5GHz)                      |
-|      桥片(Chipset)      | Loongson 7A2000                                              |
-|       *显卡(GPU)        | AMD Radeon Pro WX 2100 (2GB GDDR5, Low-Profile) [^3] <br />AMD Radeon R5 340 (1GB GDDR5, Low-Profile, Alternative)[^4] <br /> AMD Radeon 520 (2GB GDDR5, Low-Profile, Recommending Alternative)[^5] |
+|      桥片(Chipset)      | Loongson 7A2000 [^9]                                              |
+|       *显卡(GPU)[^8]        | **AMD Radeon R7 360 (2GB GDDR5, Low-Profile, Current)[^7]** <br /> AMD Radeon Pro WX 2100 (2GB GDDR5, Low-Profile) [^3] <br />AMD Radeon R5 340 (1GB GDDR5, Low-Profile, Alternative)[^4] <br /> AMD Radeon 520 (2GB GDDR5, Low-Profile, Recommending Alternative)[^5]|
 |    主板(Motherboard)    | XA61200                                                      |
 |      *内存(Memory)      | UniIC SCC16GU03H2F1C-32AA DDR4 3200MT/s 16GB x2 (Total 32GB) |
 |     *固态硬盘(SSD)      | Kioxia RC10 500G (NVMe, System) <br /> Samsung PM961 (NVMe, Source Code Data)|
@@ -27,3 +27,6 @@
 [^4]: 附带 Linux 内核参数为: `amdgpu.si_support=1 radeon.si_support=0 pcie_aspm=off`
 [^5]: 该卡曾常见于现有各类信创台式机产品中，兼容性最好，可使用 R5 340 相同的内核参数
 [^6]: TFX 机箱使用 FLEX 电源需定制转接板，当前价格为 CNY￥ 100 
+[^7]: 该卡的半高版本相当少见，铭牌为 PSTHD，来源应该是 OEM 工控机，内核参数为`amdgpu.cik_support=1 radeon.cik_support=0 amdgpu.sg_display=0 pcie_aspm=off`  
+[^8]: 由于龙芯平台的 ACPI 休眠机制不完善，若使用 AMD 显卡均需关闭动态断电功能 (添加内核参数 `amdgpu.runpm=0`)
+[^9]: 由于体质问题，为保证稳定性建议更换其原装散热片 (适用于 XA61200/XA612A0 主板)
