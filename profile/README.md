@@ -1,5 +1,5 @@
 # LiarOnce's Built Distributions for LoongArch
-<img src="aosc-os-flag_compressed.png" width=120 height=30 /> <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Arch+Linux&color=1793D1&logo=Arch+Linux&logoColor=FFFFFF&label=" /> <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Debian&color=A81D33&logo=Debian&logoColor=FFFFFF&label=" /> <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Deepin&color=007CFF&logo=deepin&logoColor=FFFFFF&label=" />
+<img src="./aosc-os-flag_compressed.png" width=120 height=30 /> <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Arch+Linux&color=1793D1&logo=Arch+Linux&logoColor=FFFFFF&label=" /> <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Debian&color=A81D33&logo=Debian&logoColor=FFFFFF&label=" /> <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Deepin&color=007CFF&logo=deepin&logoColor=FFFFFF&label=" />
 
 ## 编译主机硬件配置 / Build Machine Specs
 可用于装机参考/It can be used as a reference for PC installation  
