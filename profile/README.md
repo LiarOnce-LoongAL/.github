@@ -24,7 +24,7 @@
 
 [^1]: 需使用部分非原装零件安装 Need to be used some non original accessories for installation https://github.com/LiarOnce-LoongAL/.github/blob/main/cooler/cooler.md
 [^2]: 例如当前消费端常见的国产 WiFi 6 网卡爱科微的 AIC8800 系列，该网卡接口常见为 USB 和 SDIO，并无 M.2 接口版本。
-[^3]: 因龙芯平台与 AMD Polaris Lexa 架构的兼容性问题，附带 Linux 内核参数为: `amdgpu.dpm=0 pcie_aspm=off`，但实测为 7A2000 桥片更换带有风扇的散热器并配合最新 BIOS 后稳定性大幅度提升
+[^3]: 因龙芯平台与 AMD Polaris Lexa 架构的兼容性问题，附带 Linux 内核参数为: `amdgpu.dpm=0 pcie_aspm=off`，但实测为 7A2000 桥片更换带有风扇的散热器并配合最新 BIOS 后稳定性大幅度提升，此时需开启 DPM (`amdgpu.dpm=1`)
 [^4]: 附带 Linux 内核参数为: `amdgpu.si_support=1 radeon.si_support=0 pcie_aspm=off`
 [^5]: 该卡曾常见于现有各类信创台式机产品中，兼容性最好，可使用 R5 340 相同的内核参数
 [^6]: TFX 机箱使用 FLEX 电源需定制转接板，当前价格为 CNY￥ 100 
