@@ -1,5 +1,6 @@
 # LiarOnce's Built Distributions for LoongArch
-<img src="profile/aosc-os-flag_compressed.png" width=120 height=30 /> <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Arch+Linux&color=1793D1&logo=Arch+Linux&logoColor=FFFFFF&label=" /> <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Debian&color=A81D33&logo=Debian&logoColor=FFFFFF&label=" /> <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Deepin&color=007CFF&logo=deepin&logoColor=FFFFFF&label=" />
+|   Flags   |   ![](./aosc-os-flag_compressed.png) ![](https://img.shields.io/static/v1?style=for-the-badge&message=Arch+Linux&color=1793D1&logo=Arch+Linux&logoColor=FFFFFF&label=) ![](https://img.shields.io/static/v1?style=for-the-badge&message=Debian&color=A81D33&logo=Debian&logoColor=FFFFFF&label=) ![](https://img.shields.io/static/v1?style=for-the-badge&message=Deepin&color=007CFF&logo=deepin&logoColor=FFFFFF&label=)   |
+| ---- | ---- |
 
 ## 编译主机硬件配置 / Build Machine Specs
 可用于装机参考/It can be used as a reference for PC installation  
@@ -21,6 +22,7 @@
 |  *!无线网卡(Wireless)   | Intel Wireless AC 9260                                       |
 |     *机箱(Chassis)      | QuickPC (OEM-like, Low-Profile)                              |
 |  *!电源(Power Supply)   | FSP Group FSP350-701UJ (350 watt, 80PLUS Bronze, with TFX to FLEX Converter) [^6]|
+|  *!其他(Others)         | ASUS DRW-24D5MT <br /> 8BitDo Ultimate 2.4G Wireless Controller <br /> Dell(戴记严选) GM3323D Mouse <br /> IKBC C87 Keyboard |
 
 [^1]: 需使用部分非原装零件安装 Need to be used some non original accessories for installation https://github.com/LiarOnce-LoongAL/.github/blob/main/cooler/cooler.md
 [^2]: 例如当前消费端常见的国产 WiFi 6 网卡爱科微的 AIC8800 系列，该网卡接口常见为 USB 和 SDIO，并无 M.2 接口版本。
