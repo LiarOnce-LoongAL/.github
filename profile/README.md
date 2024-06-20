@@ -30,7 +30,7 @@
 |          类型           | 型号                                                         |
 | :---------------------: | :----------------------------------------------------------- |
 |       *显卡(GPU)[^8]    | AMD Radeon R7 360 (2GB GDDR5, Low-Profile)[^5] <br /> AMD Radeon R5 340 (1GB GDDR5, Low-Profile, Alternative)[^6] <br /> AMD Radeon 520 (2GB GDDR5, Low-Profile, Recommending Alternative)[^7]|
-|  *!有线网卡(Ethernet)   | Motorcomm YT6801 (PCIe x1, Gigabit Ethernet)[^12] MUCSE RNP N10G-X2[^13] |
+|  *!有线网卡(Ethernet)   | Motorcomm YT6801 (PCIe x1, Gigabit Ethernet)[^12] <br /> MUCSE RNP N10G-X2[^13] |
 |  *!无线网卡(Wireless)   | Intel Wireless AC 8265 <br /> Intel Wi-Fi 6 AX200[^9] <br /> Intel Wi-Fi 6 AX210[^10] <br /> Intel Wi-Fi 7 BE200[^11] <br /> Intel Wi-Fi 7 BE202[^11] |
 
 [^1]: 例如当前消费端常见的国产 WiFi 6 网卡爱科微的 AIC8800 系列，该网卡接口常见为 USB 和 SDIO，并无 M.2 接口版本。
