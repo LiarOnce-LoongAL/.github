@@ -14,22 +14,21 @@
 |       *显卡(GPU)[^8]    | **AMD Radeon Pro WX 2100 (2GB GDDR5, Low-Profile, Current)** [^3] <br /> AMD Radeon R7 360 (2GB GDDR5, Low-Profile)[^7] <br /> AMD Radeon R5 340 (1GB GDDR5, Low-Profile, Alternative)[^4] <br /> AMD Radeon 520 (2GB GDDR5, Low-Profile, Recommending Alternative)[^5]|
 |    主板(Motherboard)    | XA61200                                                      |
 |      *内存(Memory)      | UniIC SCC16GU03H2F1C-32AA DDR4 3200MT/s 16GB x2 (Total 32GB) |
-|     *固态硬盘(SSD)      | Kioxia RC10 500G (NVMe, System) <br /> Samsung PM961 (NVMe, Source Code Data)|
+|     *固态硬盘(SSD)      | ZHITAI TiPlus 5000 1TB (NVMe, System for AOSC OS) <br /> Kioxia RC10 500G (NVMe, System for Loong ArchLinux) |
 |     *散热器(Cooler)     | DeepCool AN600 with Honeywell PTM7950 [^1]                   |
-| *机箱风扇(External Fan) | ID-COOLING 80*25(mm)                                         |
+| *机箱风扇(External Fan) | ID-COOLING XF-12025-K <br /> ID-COOLING NO-8025-SD           |
 |   有线网卡(Ethernet)    | Realtek RTL8111H (Integrated)                                |
 |  *!有线网卡(Ethernet)   | Realtek RTL8125B (Mini-PCIe)                                 |
 |  *!无线网卡(Wireless)   | Intel Wireless AC 9260                                       |
-|     *机箱(Chassis)      | QuickPC (OEM-like, Low-Profile)                              |
-|  *!电源(Power Supply)   | FSP Group FSP350-701UJ (350 watt, 80PLUS Bronze, with TFX to FLEX Converter) [^6]|
-|  *!其他(Others)         | ASUS DRW-24D5MT <br /> 8BitDo Ultimate 2.4G Wireless Controller <br /> Dell(戴记严选) GM3323D Mouse <br /> IKBC C87 Keyboard |
+|     *机箱(Chassis)      | Great Wall ShangQi R10 (长城商祺R10，mATX and Retail)        |
+|  *!电源(Power Supply)   | XIGMATEK XTK-550 (550 watt, 80PLUS White)                   |
+|  *!其他(Others)         | ASUS DRW-24D5MT <br /> 8BitDo Ultimate 2.4G Wireless Controller <br /> Dell(戴记严选) GM3323D Mouse <br /> IKBC C87 Keyboard (Cherry MX Red) |
 
 [^1]: 需使用部分非原装零件安装 Need to be used some non original accessories for installation https://github.com/LiarOnce-LoongAL/.github/blob/main/cooler/cooler.md
 [^2]: 例如当前消费端常见的国产 WiFi 6 网卡爱科微的 AIC8800 系列，该网卡接口常见为 USB 和 SDIO，并无 M.2 接口版本。
 [^3]: 因龙芯平台与 AMD Polaris Lexa 架构的兼容性问题，附带 Linux 内核参数为: `amdgpu.dpm=0 pcie_aspm=off`，但实测为 7A2000 桥片更换带有风扇的散热器并配合最新 BIOS 后稳定性大幅度提升，此时需开启 DPM (`amdgpu.dpm=1`)
 [^4]: 附带 Linux 内核参数为: `amdgpu.si_support=1 radeon.si_support=0 pcie_aspm=off`
 [^5]: 该卡曾常见于现有各类信创台式机产品中，兼容性最好，可使用 R5 340 相同的内核参数
-[^6]: TFX 机箱使用 FLEX 电源需定制转接板，当前价格为 CNY￥ 100 
 [^7]: 该卡的半高版本相当少见，铭牌为 PSTHD，来源应该是 OEM 工控机，内核参数为`amdgpu.cik_support=1 radeon.cik_support=0 amdgpu.sg_display=0 pcie_aspm=off`  
 [^8]: 由于龙芯平台的 ACPI 休眠机制不完善，若使用 AMD 显卡均需关闭动态断电功能 (添加内核参数 `amdgpu.runpm=0`)   
 [^9]: 由于体质问题，为保证稳定性建议更换其原装散热片 (适用于 XA61200/XA612A0 主板) https://github.com/LiarOnce-LoongAL/.github/blob/main/cooler/chipset.md
