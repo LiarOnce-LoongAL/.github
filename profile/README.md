@@ -19,7 +19,7 @@
 | *机箱风扇(External Fan) | ID-COOLING XF-12025-K <br /> ID-COOLING NO-8025-SD           |
 |   有线网卡(Ethernet)    | Realtek RTL8111H (Integrated)                                |
 |  *!有线网卡(Ethernet)   | Realtek RTL8125B (Mini-PCIe)                                 |
-|  *!无线网卡(Wireless)   | Intel Wireless AC 9260                                       |
+|  *!无线网卡(Wireless)[^14]   | Intel Wireless AC 9260 (M.2 Key A+E)                         |
 |     *机箱(Chassis)      | Great Wall ShangQi R10 (长城商祺R10，mATX and Retail)        |
 |  *!电源(Power Supply)   | XIGMATEK XTK-550 (550 watt, 80PLUS White)                   |
 |  *!其他(Others)         | ASUS DRW-24D5MT <br /> 8BitDo Ultimate 2.4G Wireless Controller <br /> Dell(戴记严选) GM3323D Mouse <br /> IKBC C87 Keyboard (Cherry MX Red) |
@@ -30,8 +30,8 @@
 |          类型           | 型号                                                         |
 | :---------------------: | :----------------------------------------------------------- |
 |       *显卡(GPU)[^8]    | AMD Radeon R7 360 (2GB GDDR5, Low-Profile)[^5] <br /> AMD Radeon R5 340 (1GB GDDR5, Low-Profile, Alternative)[^6] <br /> AMD Radeon 520 (2GB GDDR5, Low-Profile, Recommending Alternative)[^7]|
-|  *!有线网卡(Ethernet)   | Motorcomm YT6801 (PCIe 1.0 x1, 1 Gigabit Ethernet)[^12] <br /> MUCSE RNP N10G-X2(PCIe 3.0 x8, 10 Gigabit Ethernet)[^13] |
-|  *!无线网卡(Wireless)   | Intel Wireless AC 8265 <br /> Intel Wi-Fi 6 AX200[^9] <br /> Intel Wi-Fi 6 AX210[^10] <br /> Intel Wi-Fi 7 BE200[^11] <br /> Intel Wi-Fi 7 BE202[^11] |
+|  *!有线网卡(Ethernet)   | Motorcomm YT6801 (PCIe 1.0 x1, 1 Gigabit Ethernet)[^12] <br /> MUCSE RNP N10G-X2 (PCIe 3.0 x8, 10 Gigabit Ethernet)[^13] |
+|  *!无线网卡(Wireless)[^14]   | Intel Wireless AC 8265 (M.2 Key A+E) <br /> Intel Wi-Fi 6 AX200 (M.2 Key A+E)[^9] <br /> Intel Wi-Fi 6 AX210 (M.2 Key A+E)[^10] <br /> Intel Wi-Fi 7 BE200 (M.2 Key E)[^11] <br /> Intel Wi-Fi 7 BE202 (M.2 Key E)[^11] <br /> MediaTek MT7921(M.2 Key A+E)[^15] <br /> MediaTek MT7921K(M.2 Key A+E)[^15] <br /> MediaTek MT7922(M.2 Key A+E)[^16] |
 
 [^1]: 例如当前消费端常见的国产 WiFi 6 网卡爱科微的 AIC8800 系列，该网卡接口常见为 USB 和 SDIO，并无 M.2 接口版本。
 [^2]: 由于体质问题，为保证稳定性建议更换其原装散热片 (适用于 XA61200/XA612A0 主板) https://github.com/LiarOnce-LoongAL/.github/blob/main/cooler/chipset.md
@@ -47,5 +47,9 @@
 [^9]: 需 Linux 5.1 及以上内核
 [^10]: 需 Linux 5.10 及以上内核
 [^11]: 需 Linux 6.5 及以上内核
+[^14]: 请注意，请勿使用 CNVi 协议网卡（例如 AX201，AX211，AX411），该协议网卡由于物理原因并非完整网卡，因此除指定 Intel 平台外，其他平台均不支持。
+[^15]: 需 Linux 5.12 及以上内核
+[^16]: 需 Linux 5.16 及以上内核
+
 [^12]: 需根据裕太微官网驱动源码自行编译安装
 [^13]: 需前往沐创官网注册账号并根据文档编译安装
