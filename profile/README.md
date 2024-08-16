@@ -11,7 +11,7 @@
 | :---------------------: | :----------------------------------------------------------- |
 |       处理器(CPU)       | Loongson 3A6000 (8-cores, up-to 2.5GHz)                      |
 |      桥片(Chipset)      | Loongson 7A2000 [^2]                                              |
-|       *显卡(GPU)[^8]    | **AMD Radeon Pro WX 2100 (2GB GDDR5, Low-Profile, Current)** [^3]|
+|       *显卡(GPU)[^5]    | **AMD Radeon Pro WX 2100 (2GB GDDR5, Low-Profile, Current)** [^3]|
 |    主板(Motherboard)    | XA61200                                                      |
 |      *内存(Memory)      | UniIC SCC16GU03H2F1C-32AA DDR4 3200MT/s 16GB x2 (Total 32GB) |
 |     *固态硬盘(SSD)      | ZHITAI TiPlus 5000 1TB (NVMe, System for AOSC OS) <br /> Kioxia RC10 500G (NVMe, System for Loong ArchLinux) |
@@ -24,32 +24,8 @@
 |  *!电源(Power Supply)   | XIGMATEK XTK-550 (550 watt, 80PLUS White)                   |
 |  *!其他(Others)         | ASUS DRW-24D5MT <br /> 8BitDo Ultimate 2.4G Wireless Controller <br /> Dell(戴记严选) GM3323D Mouse <br /> IKBC C87 Keyboard (Cherry MX Red) |
 
-## 个人持有的可使用的替换硬件
-个人较为推荐的硬件，可根据个人需求自行替换：
-
-|          类型           | 型号                                                         |
-| :---------------------: | :----------------------------------------------------------- |
-|       *显卡(GPU)[^8]    | AMD Radeon R7 360 (2GB GDDR5, Low-Profile)[^5] <br /> AMD Radeon R5 340 (1GB GDDR5, Low-Profile, Alternative)[^6] <br /> AMD Radeon 520 (2GB GDDR5, Low-Profile, Recommending Alternative)[^7]|
-|  *!有线网卡(Ethernet)   | Motorcomm YT6801 (PCIe 1.0 x1, 1 Gigabit Ethernet)[^12] <br /> MUCSE RNP N10G-X2 (PCIe 3.0 x8, 10 Gigabit Ethernet)[^13] |
-|  *!无线网卡(Wireless)[^14]   | Intel Wireless AC 8265 (M.2 Key A+E) <br /> Intel Wi-Fi 6 AX200 (M.2 Key A+E)[^9] <br /> Intel Wi-Fi 6 AX210 (M.2 Key A+E)[^10] <br /> Intel Wi-Fi 7 BE200 (M.2 Key E)[^11] <br /> Intel Wi-Fi 7 BE202 (M.2 Key E)[^11] <br /> MediaTek MT7921(M.2 Key A+E)[^15] <br /> MediaTek MT7921K(M.2 Key A+E)[^15] <br /> MediaTek MT7922(M.2 Key A+E)[^16] |
-
 [^1]: 例如当前消费端常见的国产 WiFi 6 网卡爱科微的 AIC8800 系列，该网卡接口常见为 USB 和 SDIO，并无 M.2 接口版本。
 [^2]: 由于体质问题，为保证稳定性建议更换其原装散热片 (适用于 XA61200/XA612A0 主板) https://github.com/LiarOnce-LoongAL/.github/blob/main/cooler/chipset.md
 [^3]: 原先因龙芯平台与 AMD Polaris 架构的兼容性问题，附带 Linux 内核参数为: `amdgpu.dpm=0 pcie_aspm=off`，但实测为 7A2000 桥片更换带有风扇的散热器并配合最新 BIOS 后稳定性大幅度提升，此时需开启 DPM (`amdgpu.dpm=1`)，且在 AOSC OS 和 Deepin 中使用最新内核后该问题已解决，但上游因某种原因未同意合并对应补丁，若需使用 AMD Polaris 架构的显卡请使用新世界发行版并更新到应用有修复补丁的最新内核。
 [^4]: 需使用部分非原装零件安装 https://github.com/LiarOnce-LoongAL/.github/blob/main/cooler/cooler.md
-
-[^5]: 该卡的半高版本相当少见，铭牌为 PSTHD，来源应该是 OEM 工控机，内核参数为`amdgpu.cik_support=1 radeon.cik_support=0 amdgpu.sg_display=0 pcie_aspm=off`  
-[^6]: 附带 Linux 内核参数为: `amdgpu.si_support=1 radeon.si_support=0 pcie_aspm=off`
-[^7]: 该卡曾常见于现有各类信创台式机产品中，兼容性最好，可使用 R5 340 相同的内核参数
-
-[^8]: 由于龙芯平台的 ACPI 休眠机制不完善，若使用 AMD 显卡均需关闭动态断电功能 (添加内核参数 `amdgpu.runpm=0`)   
-
-[^9]: 需 Linux 5.1 及以上内核
-[^10]: 需 Linux 5.10 及以上内核
-[^11]: 需 Linux 6.5 及以上内核
-[^14]: 请注意，请勿使用 CNVi 协议网卡（例如 AX201，AX211，AX411），该协议网卡由于物理原因并非完整网卡，因此除指定 Intel 平台外，其他平台均不支持。
-[^15]: 需 Linux 5.12 及以上内核
-[^16]: 需 Linux 5.16 及以上内核
-
-[^12]: 需根据裕太微官网驱动源码自行编译安装
-[^13]: 需前往沐创官网注册账号并根据文档编译安装
+[^5]: 由于龙芯平台的 ACPI 休眠机制不完善，若使用 AMD 显卡均需关闭动态断电功能 (添加内核参数 `amdgpu.runpm=0`)   
