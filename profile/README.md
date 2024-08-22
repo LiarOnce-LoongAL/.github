@@ -9,7 +9,7 @@
 
 |          类型           | 型号                                                         |
 | :---------------------: | :----------------------------------------------------------- |
-|       处理器(CPU)       | Loongson 3A6000 (8-cores, up-to 2.5GHz)                      |
+|       处理器(CPU)       | Loongson 3A6000 (4-cores/8-threads, up-to 2.5GHz)                      |
 |      桥片(Chipset)      | Loongson 7A2000 [^2]                                              |
 |       *显卡(GPU)[^5]    | **AMD Radeon Pro WX 2100 (2GB GDDR5, Low-Profile, Current)** [^3]|
 |    主板(Motherboard)    | XA61200                                                      |
